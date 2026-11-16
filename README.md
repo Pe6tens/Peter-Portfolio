@@ -95,7 +95,7 @@ The project contains the following main files:
 The website is hosted using GitHub Pages.
 
 Live Website:
-https://github.com/Pe6tens/Peter-Portfolio
+https://pe6tens.github.io/Peter-Portfolio/
 
 GitHub Repository:
 https://github.com/YOUR-USERNAME/pe6tens-portfolio
