@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Peter Musa (Pe6tens)</title>
+  <meta name="description" content="Peter Musa, also known as Pe6tens. Digital artist, graphic designer and Computer Science student at Miva Open University.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Literata:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <a class="brand" href="index.html">Peter Musa</a>
+  <nav aria-label="Main">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="projects.html">Projects</a>
+    <a href="planner.html">Planner</a>
+    <a href="contact.html" aria-current="page">Contact</a>
+  </nav>
+</header>
+
+<main id="main">
+
+<!-- ===================== CONTACT ===================== -->
+  <section class="page-head" aria-labelledby="contact-title">
+    <h2 class="page-title" id="contact-title">Contact</h2>
+    <p class="lead">Want a logo, a cover or a portrait? Or just want to say hello? Write to me.</p>
+  </section>
+
+  <section aria-labelledby="form-title">
+    <h3 class="sr" id="form-title">Contact form</h3>
+    <p class="mail"><a href="mailto:p.musa4597@miva.edu.ng">p.musa4597@miva.edu.ng</a></p>
+    <form id="contactForm" novalidate>
+      <label for="name">Your name
+        <input id="name" name="name" autocomplete="name" aria-describedby="nameError">
+        <span class="err" id="nameError" role="alert"></span>
+      </label>
+      <label for="email">Email address
+        <input id="email" name="email" type="email" autocomplete="email" aria-describedby="emailError">
+        <span class="err" id="emailError" role="alert"></span>
+      </label>
+      <label for="phone">Phone number
+        <input id="phone" name="phone" type="tel" inputmode="numeric" autocomplete="tel" aria-describedby="phoneError">
+        <span class="err" id="phoneError" role="alert"></span>
+      </label>
+      <label for="message">Message
+        <textarea id="message" name="message" rows="5" aria-describedby="messageError"></textarea>
+        <span class="err" id="messageError" role="alert"></span>
+      </label>
+      <button class="btn" type="submit">Send message</button>
+      <p class="form-status" id="formStatus" role="status"></p>
+    </form>
+    <p class="links">Source code: <a href="https://github.com/Pe6tens/Peter-Portfolio">GitHub</a></p>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2026 | Peter Musa (Pe6tens)</p>
+  <p>Never bitter, never stalled. Just digging deeper until there's room to flourish.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

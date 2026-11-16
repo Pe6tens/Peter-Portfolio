@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Academic Planner | Peter Musa (Pe6tens)</title>
+  <meta name="description" content="Peter Musa, also known as Pe6tens. Digital artist, graphic designer and Computer Science student at Miva Open University.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Literata:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <a class="brand" href="index.html">Peter Musa</a>
+  <nav aria-label="Main">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="projects.html">Projects</a>
+    <a href="planner.html" aria-current="page">Planner</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main id="main">
+
+<!-- ===================== ACADEMIC PLANNER ===================== -->
+  <section class="page-head" aria-labelledby="planner-title">
+    <h2 class="page-title" id="planner-title">Academic Planner</h2>
+    <p class="lead">Add the tasks you need to finish, tick them off when they are done and delete the ones you no longer need. Your tasks stay saved in this browser.</p>
+  </section>
+
+  <section aria-labelledby="tasks-title">
+    <h3 class="section-title" id="tasks-title">My tasks</h3>
+    <form id="taskForm" class="task-form" novalidate>
+      <label for="taskText">New task
+        <input id="taskText" name="task" maxlength="120" autocomplete="off" aria-describedby="taskError" placeholder="For example: finish the calculus assignment">
+      </label>
+      <div class="task-row">
+        <label for="taskCourse">Course (optional)
+          <select id="taskCourse" name="course"><option value="">No course</option></select>
+        </label>
+        <label for="taskDue">Due date (optional)
+          <input id="taskDue" name="due" type="date">
+        </label>
+      </div>
+      <p class="err" id="taskError" role="alert"></p>
+      <button class="btn" type="submit">Add task</button>
+    </form>
+
+    <div class="filters" role="group" aria-label="Show tasks">
+      <button type="button" data-filter="all" aria-pressed="true">All</button>
+      <button type="button" data-filter="todo" aria-pressed="false">To do</button>
+      <button type="button" data-filter="done" aria-pressed="false">Done</button>
+      <p class="count" id="taskCount" aria-live="polite"></p>
+    </div>
+    <ul class="tasks" id="taskList"></ul>
+    <p class="empty" id="taskEmpty" hidden></p>
+    <button class="btn" type="button" id="clearDone" disabled>Clear finished tasks</button>
+  </section>
+
+  <section aria-labelledby="timetable-title">
+    <h3 class="section-title" id="timetable-title">Weekly timetable</h3>
+    <p class="lead">My plan for this semester's courses. Today's rows are highlighted.</p>
+    <div class="table-wrap">
+      <table class="timetable">
+        <caption class="sr">Weekly study timetable</caption>
+        <thead>
+          <tr><th scope="col">Day</th><th scope="col">Time</th><th scope="col">Course</th><th scope="col">Focus</th></tr>
+        </thead>
+        <tbody id="timetableBody"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section aria-labelledby="courses-title">
+    <h3 class="section-title" id="courses-title">My courses</h3>
+    <div class="table-wrap">
+      <table>
+        <caption class="sr">Courses this semester</caption>
+        <thead>
+          <tr><th scope="col">Code</th><th scope="col">Title</th><th scope="col">Units</th></tr>
+        </thead>
+        <tbody id="courseBody"></tbody>
+        <tfoot>
+          <tr><th scope="row" colspan="2">Total units</th><td id="totalUnits"></td></tr>
+        </tfoot>
+      </table>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2026 | Peter Musa (Pe6tens)</p>
+  <p>Never bitter, never stalled. Just digging deeper until there's room to flourish.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects | Peter Musa (Pe6tens)</title>
+  <meta name="description" content="Peter Musa, also known as Pe6tens. Digital artist, graphic designer and Computer Science student at Miva Open University.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Literata:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="top">
+  <a class="brand" href="index.html">Peter Musa</a>
+  <nav aria-label="Main">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="projects.html" aria-current="page">Projects</a>
+    <a href="planner.html">Planner</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<main id="main">
+
+<!-- ===================== PROJECTS ===================== -->
+  <section class="page-head" aria-labelledby="projects-title">
+    <h2 class="page-title" id="projects-title">Projects</h2>
+    <p class="lead">Things I have made and am still making: art, a task planner and this website.</p>
+  </section>
+
+  <section aria-labelledby="project-list-title">
+    <h3 class="sr" id="project-list-title">My projects</h3>
+    <div class="project-list">
+
+      <article class="project-card">
+        <img src="images/illustrations/family.jpg" alt="Digital illustration of a family in a living room" loading="lazy">
+        <div class="project-body">
+          <h4>Pe6tens art collection</h4>
+          <p>Digital illustrations, smudge portraits and vector vexel art, grouped by type, with line art and reference photos for some pieces.</p>
+          <p class="tech"><strong>Made with:</strong> digital illustration, smudge art, vector vexel</p>
+          <div class="project-foot">
+            <span class="tag">Ongoing</span>
+            <a href="#gallery-section" data-tab="Illustrations">Browse the collection</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <img class="contain" src="images/logos/pe6tens.png" alt="The Pe6tens logo: the name inside an infinity loop" loading="lazy">
+        <div class="project-body">
+          <h4>Logos and cover art</h4>
+          <p>Logos for small businesses and artists, plus cover art for music releases. My own Pe6tens logo, an infinity loop for persistence, is the first one.</p>
+          <p class="tech"><strong>Made with:</strong> vector design, lettering</p>
+          <div class="project-foot">
+            <span class="tag">Ongoing</span>
+            <a href="#gallery-section" data-tab="Logos">See the logos</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <img src="images/projects/planner.png" alt="Screenshot of my Academic Planner" loading="lazy">
+        <div class="project-body">
+          <h4>Academic Planner</h4>
+          <p>A task manager with a weekly timetable for my courses. I can add tasks, tick them off and delete them, and they are saved in my browser.</p>
+          <p class="tech"><strong>Built with:</strong> HTML, CSS and JavaScript</p>
+          <div class="project-foot">
+            <span class="tag">Working</span>
+            <a href="planner.html">Try the planner</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <img src="images/projects/portfolio.png" alt="Screenshot of the home page of this portfolio website" loading="lazy">
+        <div class="project-body">
+          <h4>This portfolio website</h4>
+          <p>A responsive site about me and my work, built for my Introduction to Web Technologies term project.</p>
+          <p class="tech"><strong>Built with:</strong> HTML, CSS and JavaScript</p>
+          <div class="project-foot">
+            <span class="tag">In progress</span>
+            <a href="https://github.com/Pe6tens/Peter-Portfolio">View the source code</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section id="gallery-section" aria-labelledby="gallery-title">
+    <h3 class="section-title" id="gallery-title">Art gallery</h3>
+    <p class="lead">My artwork, grouped by type. Tap any piece to see it larger. Some have a second version, like the line art. My own Pe6tens logo is the first one under Logos.</p>
+    <div class="tabs" id="tabs" role="tablist" aria-label="Artwork type"></div>
+    <div class="gallery" id="gallery"></div>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2026 | Peter Musa (Pe6tens)</p>
+  <p>Never bitter, never stalled. Just digging deeper until there's room to flourish.</p>
+</footer>
+
+<!-- Lightbox for the art gallery -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Artwork viewer" hidden>
+  <button class="lb-close" id="lbClose" aria-label="Close">Close</button>
+  <button class="lb-nav prev" id="lbPrev" aria-label="Previous">&lsaquo;</button>
+  <figure>
+    <img id="lbImg" alt="">
+    <figcaption><span id="lbTitle"></span> <button id="lbAlt" class="btn small" hidden></button></figcaption>
+  </figure>
+  <button class="lb-nav next" id="lbNext" aria-label="Next">&rsaquo;</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
