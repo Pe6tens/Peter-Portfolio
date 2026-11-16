@@ -98,7 +98,7 @@ Live Website:
 https://pe6tens.github.io/Peter-Portfolio/
 
 GitHub Repository:
-https://github.com/YOUR-USERNAME/pe6tens-portfolio
+https://github.com/Pe6tens/Peter-Portfolio
 
 
 ## 8. Developer
